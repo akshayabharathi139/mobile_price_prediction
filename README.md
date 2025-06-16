@@ -36,13 +36,24 @@ Visualization	seaborn, matplotlib (optional)
 ✅ Responsive error handling for invalid inputs
 
 📂 Project Structure
-mobile_phone_pricing/
-├── app.py # Streamlit Web App
-├── train_model.py # Model training script using XGBoost
-├── model.pkl # Trained XGBoost model
-├── requirements.txt # Dependencies
-├── dataset.csv # Mobile pricing dataset
-└── README.md # Project documentation
+mobile-price-predictor/
+│
+├── backend/
+│   ├── app.py
+│   ├── train_model.py
+│   ├── model/
+│   │   ├── model.pkl
+│   │   ├── scaler.pkl
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── anime-icon.png
+│
+└── dataset/
+    └── mobile_price_data.csv
+
 🧪 How to Run the Project
 
 1. Clone the Repository
